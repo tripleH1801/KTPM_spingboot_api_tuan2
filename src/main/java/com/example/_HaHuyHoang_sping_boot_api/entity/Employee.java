@@ -2,10 +2,7 @@ package com.example._HaHuyHoang_sping_boot_api.entity;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Table(name = "employee")
 @Entity
@@ -17,6 +14,7 @@ import javax.persistence.Table;
 @NoArgsConstructor
 public class Employee {
     @Id
+    @GeneratedValue
     @Column(name = "id", nullable = false)
     private Integer id;
 
